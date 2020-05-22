@@ -5,6 +5,83 @@
   },
   "tests": [
     {
+      "category": "stored_secret",
+      "policy": {
+        "action": "alert",
+        "options": {
+          "entropy_checks": "off",
+          "basic_auth": "on",
+          "keyword": "on",
+          "mailchimp": "on",
+          "private_key": "on",
+          "stripe": "on",
+          "aws": "on",
+          "twilio": "on",
+          "slack": "on",
+          "jwt": "on",
+          "artifactory": "on",
+          "ibm": "on"
+        }
+      },
+      "name": "detect-secrets"
+    },
+    {
+      "category": "sca",
+      "policy": {
+        "action": "alert",
+        "options": {
+          "fail_on_cvss_level": 11
+        }
+      },
+      "name": "dependency_check"
+    },
+    {
+      "category": "static analysis",
+      "policy": {
+        "action": "alert",
+        "options": {}
+      },
+      "name": "appinspector"
+    },
+    {
+      "category": "cloud_misconfiguration",
+      "policy": {
+        "action": "alert",
+        "options": {
+          "sensitive_data": "on",
+          "aws": "on",
+          "azure": "on",
+          "gcp": "on"
+        }
+      },
+      "name": "tfsec"
+    },
+    {
+      "category": "static analysis",
+      "policy": {
+        "action": "alert",
+        "options": {
+          "unsafe_regexp": "on",
+          "non-literal-regexp": "on",
+          "unsafe_buffer": "on",
+          "buffer-noassert": "on",
+          "unsafe_require": "on",
+          "unsafe_filename": "on",
+          "unsafe_eval": "on",
+          "child_process": "on",
+          "mustache_escape": "on",
+          "csrf": "on",
+          "timing_attack": "on",
+          "random_bytes": "on",
+          "html_injection": "on",
+          "sql_injection": "on",
+          "unsafe_cross_origin": "on",
+          "unsafe_properties_access": "on"
+        }
+      },
+      "name": "ts-security-lint"
+    },
+    {
       "category": "static analysis",
       "policy": {
         "action": "alert",
