@@ -1,15 +1,17 @@
 {
-  "violation-policy": [{
-    "class":"stored-secrets",
-    "rules": {
-      "secret-keyword": "block"
+  "violation-policy": [
+    {
+      "class":"stored-secrets",
+      "rules": {
+        "secret-keyword": "block"
+      }
     }
-  }],
+  ],
   "plugin-options": [
     {
       "name": "detect_secrets",
       "options": {
-        "entropy_checks": "on",
+        "entropy_checks": "off",
         "basic_auth": "on",
         "keyword": "on",
         "mailchimp": "on",
