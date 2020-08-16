@@ -1,17 +1,10 @@
 {
-  "violation-policy": [
-    {
-      "class":"stored-secrets",
-      "rules": {
-        "secret-keyword": "alert"
-      }
-    }
-  ],
+  "violation-policy": [],
   "plugin-options": [
     {
       "name": "detect_secrets",
       "options": {
-        "entropy_checks": "off",
+        "entropy_checks": "on",
         "basic_auth": "on",
         "keyword": "on",
         "mailchimp": "on",
