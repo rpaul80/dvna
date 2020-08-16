@@ -42,6 +42,7 @@ The fix has been implemented in this [commit](https://github.com/appsecco/dvna/c
 The session secret is used is insecure and is used in the example snippets across the web
 
 **Vulnerable Code snippet**
+secret: 'keyboard cat',
 
 *server.js*
 ```
