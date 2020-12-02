@@ -1,1 +1,9 @@
-dfdfd
+{
+  "violation-policy": [{
+    "class": "stored-secrets",
+    "rules": {
+      "aws-access-key-id": "alert",
+      "foo": "bar"
+    }
+  }]
+}
