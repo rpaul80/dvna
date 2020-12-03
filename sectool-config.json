@@ -3,7 +3,7 @@
     {
       "class": "stored-secrets",
       "rules": {
-        "aws-access-key-id": "alert"
+        "aws-access-key-id": "doot"
       }
     }
   ]
