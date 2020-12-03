@@ -1,0 +1,8 @@
+{
+  "violation-policy": [{
+    "class": "web-app-aa",
+    "rules": {
+      "eval-with-expression": "alert"
+    }
+  }]
+}
