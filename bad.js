@@ -6,6 +6,4 @@ let l="5"
 
 eval(y)
 eval(z)
-eval(k)
 eval("k")
-eval(k)
