@@ -5,3 +5,4 @@ let k="4"
 eval(y)
 eval(z)
 eval(k)
+eval("abc")
