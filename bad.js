@@ -7,9 +7,11 @@ eval(y)
 eval(z)
 eval("k")
 let n="6"
+let o="6"
 eval(y)
 eval(z)
 eval(k)
 eval(l)
 eval(m)
 evanl(n)
+evanl(o)
