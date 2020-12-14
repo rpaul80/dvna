@@ -1,0 +1,37 @@
+{
+  "auth": {
+    "ACCESS_KEY": "123456",
+    "SECRET_KEY": "234567"
+  },
+  "tests": [
+    {
+      "category": "static analysis",
+      "policy": {
+        "action": "alert",
+        "options": {
+          "non-literal-regexp": "off",
+          "unsafe_buffer": "on",
+          "unsafe_require": "off",
+          "unsafe_eval": "on",
+          "child_process": "on",
+          "html_injection": "on",
+          "sql_injection": "on",
+          "timing_attack": "on",
+          "insecure_randomness": "on",
+          "property_name_session": "on",
+          "crlf": "on",
+          "open_redirect": "on",
+          "helmet_nocache": "on",
+          "nosql_injection": "on",
+          "mysql_multistatements": "on",
+          "reject_unauth": "on",
+          "unsafe_deserialization": "on",
+          "vm_context": "on",
+          "misconfigured_cookie": "on",
+          "disable_ssl": "on"
+        }
+      },
+      "name": "es-security-lint"
+    }
+  ]
+}
